@@ -13,10 +13,6 @@ RUN adduser weiliu
 RUN passwd -d weiliu
 RUN usermod -aG aws weiliu
 
-RUN a2enmod userdir
-RUN a2enmod autoindex
-
-
 RUN echo "<html> <head> <title>Amazon wei's test </title> <style>body {margin-top: 40px;\
  background-color: #333;} </style> </head><body> <div style=color:white;text-align:center> \
 <h1>Amazon ECS Wei's web App</h1> <h2>Congratulations!</h2> <p>Your \
